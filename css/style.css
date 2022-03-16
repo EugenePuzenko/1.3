@@ -78,7 +78,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 90vw;
-    height: 15vh;
+    min-height: 88px;
 }
 
 .header-flex__item:last-child {
