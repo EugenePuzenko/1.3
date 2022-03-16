@@ -335,6 +335,11 @@ body {
         transform: translateY(-100px);
     }
 
+    .main-flex__img {
+        flex: 0 0 47vw;
+        height: 54vh;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
