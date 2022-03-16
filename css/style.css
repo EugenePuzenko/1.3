@@ -28,6 +28,7 @@ dd {
     margin: 0;
 }
 
+
 @font-face {
     font-family: 'TT Lakes';
     src: url('../fonts/TTLakes-Regular.eot');
@@ -147,16 +148,8 @@ body {
     color: #7e7e82;
 }
 
-.main-flex {
-    padding-top: 24px;
-    padding-bottom: 35px;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .main-flex__item {
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,11 +185,10 @@ body {
 }
 
 .main-flex__img {
+    flex: 1 1 50vw;
     margin-top: 16px;
     background-image: url(../img/main/1.jpg);
     background-size: cover;
-    min-height: 25vh;
-    max-width: 100%;
 }
 
 .main-flex__item-sup-descr,
@@ -209,16 +201,10 @@ body {
     display: none;
 }
 
-@media (min-width: 480px) {
-
-    .main-flex {
-        min-height: 90vh;
-    }
-
-    .main-flex__img {
-        min-height: 35vh;
-        max-width: 75%;
-    }
+.title,
+.main-flex__item,
+.nav {
+    margin-top: 24px;
 }
 
 @media (min-width: 768px) {
@@ -260,29 +246,28 @@ body {
         order: 2;
     }
 
-    .main-flex {
+    /* .main-flex {
         min-height: 75vh;
-    }
+    } */
 
     .main-flex__item {
         display: flex;
         flex-direction: row;
-        min-height: 30vh;
     }
 
-    .main-flex__row,
-    .main-flex__img {
-        width: 45%;
+    .main-flex__row {
+        width: 40vw;
         line-height: 20px;
     }
 
     .main-flex__img {
-        width: 50%;
+        flex: 0 1 50vw;
+        height: 45vh;
     }
 
     .main-flex__img {
         margin-top: 0px;
-        border-radius: 5px;
+        border-radius: 10px;
         background-position: center center;
     }
 
@@ -313,14 +298,6 @@ body {
     .main-flex__item-descr span:last-child {
         display: block;
         margin-top: 25px;
-    }
-
-    .main-flex {
-        min-height: 535px;
-    }
-
-    .main-flex__item {
-        min-height: 307px;
     }
 
     .header-flex__item:last-child {
@@ -354,8 +331,8 @@ body {
         margin: 42px 0px 0px 0px;
     }
 
-    .main-flex {
-        transform: translateY(-90px);
+    .main {
+        transform: translateY(-100px);
     }
 
     .nav {
