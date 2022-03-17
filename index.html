@@ -12,74 +12,87 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-flex">
-                <div class="header-flex__item">
-                    <button class="header-flex__button">
-                        <img src="img/header/01.svg" alt="Меню">
-                    </button>
+            <div class="inner-wrapper">
+                <ul class="row">
+                    <li class="row__item">
+                        <button class="row__button">
+                            <img src="assets/img/header/01.svg" alt="Меню">
+                        </button>
 
-                    <div class="header-flex__logo">
-                        <img src="img/header/logo.svg" alt="Лого">
-                    </div>
+                        <div class="row__divider">
+                            <img src="assets/img/header/logo.svg" alt="Лого">
+                        </div>
 
-                    <div class="header-flex__divider"></div>
+                        <button class="row__button">
+                            <img src="assets/img/header/02.svg" alt="Оставить заявку">
+                        </button>
+                        <button class="row__button">
+                            <img src="assets/img/header/03.svg" alt="Статус ремонта">
+                        </button>
+                    </li>
+                    <li class="row__item">
+                        <button class="row__button">
+                            <img src="assets/img/header/04.svg" alt="">
+                        </button>
+                        <button class="row__button">
+                            <img src="assets/img/header/05.svg" alt="">
+                        </button>
+                        <button class="row__button">
+                            <img src="assets/img/header/06.svg" alt="">
+                        </button>
 
-                    <button class="header-flex__button"><span>Оставить заявку</span>
-                        <img src="img/header/02.svg" alt="Оставить заявку">
-                    </button>
-                    <button class="header-flex__button"><span>Статус ремонта</span>
-                        <img src="img/header/03.svg" alt="Статус ремонта">
-                    </button>
-                </div>
-                <div class="header-flex__item">
-                    <button class="header-flex__button">
-                        <img src="img/header/04.svg" alt="">
-                    </button>
-                    <button class="header-flex__button">
-                        <img src="img/header/05.svg" alt="">
-                    </button>
-                    <button class="header-flex__button">
-                        <img src="img/header/06.svg" alt="">
-                    </button>
-
-                    <div class="header-flex__divider"></div>
-
-                    <button class="header-flex__button">
-                        <img src="img/header/02.svg" alt="Оставить заявку">
-                    </button>
-                    <button class="header-flex__button">
-                        <img src="img/header/03.svg" alt="Статус ремонта">
-                    </button>
-                </div>
+                        <button class="row__button">
+                            <img src="assets/img/header/02.svg" alt="Оставить заявку">
+                        </button>
+                        <button class="row__button">
+                            <img src="assets/img/header/03.svg" alt="Статус ремонта">
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="container">
-            <h1 class="title">Услуги и сервисы</h1>
-            <nav class="nav">
-                <li class="nav__item--active"><a class="nav__link">Ремонтируемые устройства</a></li>
-                <li class="nav__item"><a class="nav__link">Дополнительные услуги</a></li>
-                <li class="nav__item"><a class="nav__link">Цены на услуги</a></li>
-                <li class="nav__item"><a class="nav__link">Адреса сервисных центров</a></li>
-                <li class="nav__item"><a class="nav__link">Специальные цены</a></li>
-                <li class="nav__item"><a class="nav__link">Отзывы</a></li>
-            </nav>
-            <div class="main-flex__item">
-                <div class="main-flex__row">
-                    <p class="main-flex__item-descr">Мы являемся авторизованным сервисным центром по ремонту техники
-                        Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
-                        производителя.
-                        <span class="main-flex__item-sup-descr">Мы успешно работаем с 1992 года и заслужили
-                            репутацию надежного партнера</span>
-                        <span>Мы успешно работаем с 1992 года и заслужили
-                            репутацию надежного партнера, что подтверждает большое количество постоянных
-                            клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
-                            советуют нас родным и близким.</span>
-                    </p>
-                    <button class="main-flex__item-button">Читать далее</button>
+            <div class="inner-wrapper">
+                <div class="title-row">
+                    <h1 class="title">Услуги и сервисы</h1>
+                    <div class="title-buttons">
+                        <button class="title__button">
+                            <span class="title__button-text">Оставить заявку</span>
+                            <img src="assets/img/header/02.svg" alt="Оставить заявку">
+                        </button>
+                        <button class="title__button">
+                            <span class="title__button-text">Статус ремонта</span>
+                            <img src="assets/img/header/03.svg" alt="Статус ремонта">
+                        </button>
+                    </div>
                 </div>
-                <div class="main-flex__img">
+                <nav class="menu">
+                    <li class="menu__item--active"><a class="menu__link">Ремонтируемые устройства</a></li>
+                    <li class="menu__item"><a class="menu__link">Дополнительные услуги</a></li>
+                    <li class="menu__item"><a class="menu__link">Цены на услуги</a></li>
+                    <li class="menu__item"><a class="menu__link">Адреса сервисных центров</a></li>
+                    <li class="menu__item"><a class="menu__link">Специальные цены</a></li>
+                    <li class="menu__item"><a class="menu__link">Отзывы</a></li>
+                </nav>
+                <div class="main-column">
+                    <div class="main-row">
+                        <p class="main-row__descr">Мы являемся авторизованным сервисным центром по ремонту техники
+                            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                            производителя.
+                            <span class="main-row__sup-descr">Мы успешно работаем с 1992 года и заслужили
+                                репутацию надежного партнера</span>
+                            <span>Мы успешно работаем с 1992 года и заслужили
+                                репутацию надежного партнера, что подтверждает большое количество постоянных
+                                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                                советуют нас родным и близким.</span>
+                        </p>
+                        <button class="main-row__button">Читать далее</button>
+                    </div>
+                    <div class="main-row__img">
+                        <img src="/assets/img/main/1.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
