@@ -70,16 +70,34 @@ dd {
     margin: 0 16px;
 }
 
-.row__item:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 88px;
-    position: relative;
+.main__inner-wrapper {
+    margin: 0 16px;
+    margin-top: 24px;
 }
 
-.row__item:last-child {
-    display: none;
+.row,
+.row__left-item,
+.row__right-item {
+    display: flex;
+    align-items: center;
+    min-height: 88px;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+}
+
+.row__left-item {
+    width: 52vw;
+}
+
+.row__right-item {
+    width: 31vw;
+}
+
+.row__right-item .row__button--mobile-hidden {
+    display: none
 }
 
 .row__button,
@@ -92,21 +110,19 @@ dd {
 }
 
 .row__divider {
-    width: 35%;
+    position: relative;
 }
 
-.row__divider::after,
-.row__item:nth-child(2) .row__button:nth-child(3)::after {
-    content: "";
+.row__divider::after {
+    content: '';
+    position: absolute;
     height: 32px;
     width: 2px;
     background: #EAEAEA;
-    position: absolute;
-    left: 53vw;
-    top: 28px;
+    transform: translate(2vw, 10px);
 }
 
-.row__item:nth-child(2) .row__button:nth-child(3)::after {
+.burger-list {
     display: none;
 }
 
@@ -202,11 +218,10 @@ dd {
 }
 
 .main-row__sup-descr,
-.main-row__descr span {
+.main-row__full-descr {
     display: none;
 }
 
-.title-row,
 .main-column,
 .menu {
     margin-top: 24px;
@@ -216,35 +231,39 @@ dd {
     display: none;
 }
 
+@media (min-width: 350px) {
+    .row__left-item {
+        width: 46vw;
+    }
+
+    .row__divider::after {
+        transform: translate(6vw, 10px);
+    }
+}
+
+@media (min-width: 450px) {
+    .row__left-item {
+        width: 40vw;
+    }
+
+    .row__divider::after {
+        transform: translate(11vw, 10px);
+    }
+}
+
 @media (min-width: 768px) {
-    .container__inner-wrapper {
+    .main__inner-wrapper {
         margin: 0 24px;
+        margin-top: 24px;
     }
 
     .title::before {
         transform: translateX(-24px);
     }
 
-    .row__item:first-child .row__button:nth-child(3),
-    .row__item:first-child .row__button:nth-child(4) {
-        display: none;
-    }
-
     .row {
         display: flex;
         justify-content: space-between;
-    }
-
-    .row__item:first-child {
-        justify-content: space-between;
-        width: 25%;
-    }
-
-    .row__item:last-child {
-        width: 45%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .main-column {
@@ -266,32 +285,62 @@ dd {
         line-height: 20px;
     }
 
-    .main-row__descr span:first-child {
-        display: block;
-    }
-
     .main-row__sup-descr {
         display: block;
         margin-top: 25px;
     }
 
     .row__divider {
-        width: auto;
+        width: 58%;
     }
 
     .row__divider::after {
-        left: 9vw;
-        top: 28px;
+        display: none;
     }
 
-    .row__item:nth-child(2) .row__button:nth-child(3)::after {
+    .row__divider::before,
+    .row__button-divider::before {
+        content: '';
+        position: absolute;
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+        transform: translate(-3vw, 10px);
+    }
+
+    .row__button-divider::before {
+        content: '';
+        transform: translate(-4vw, -5px);
+    }
+
+    .row__button-divider {
+        margin-left: 20px;
+    }
+
+    .row {
+        display: flex;
+        position: relative;
+    }
+
+    .row__left-item {
+        width: 25vw;
+        justify-content: space-between;
+    }
+
+    .row__right-item {
+        width: 40vw;
+        justify-content: space-between;
+    }
+
+    .row__right-item .row__button--mobile-hidden {
         display: block;
-        left: 81vw;
     }
 }
 
 @media (min-width: 1120px) {
-    .container__inner-wrapper {
+
+    .container__inner-wrapper,
+    .main__inner-wrapper {
         margin: 0 34px;
     }
 
@@ -304,33 +353,21 @@ dd {
         margin-top: 25px;
     }
 
-    .main-row__descr span:first-child {
+    .main-row__sup-descr {
         display: none;
     }
 
-    .main-row__descr span:last-child {
+    .main-row__full-descr {
         display: block;
         margin-top: 25px;
-    }
-
-    .row__item:last-child {
-        display: none;
     }
 
     .row {
         justify-content: flex-end;
     }
 
-    .row__item:first-child {
-        width: 23%;
-    }
-
     .header {
         border-bottom: none;
-    }
-
-    .row__item:first-child {
-        margin: 42px 0px 0px 0px;
     }
 
     .menu {
