@@ -66,7 +66,7 @@ dd {
     width: 100%;
 }
 
-.container-inner-wrapper {
+.container__inner-wrapper {
     margin: 0 16px;
 }
 
@@ -217,7 +217,7 @@ dd {
 }
 
 @media (min-width: 768px) {
-    .container-inner-wrapper {
+    .container__inner-wrapper {
         margin: 0 24px;
     }
 
@@ -291,7 +291,7 @@ dd {
 }
 
 @media (min-width: 1120px) {
-    .container-inner-wrapper {
+    .container__inner-wrapper {
         margin: 0 34px;
     }
 
